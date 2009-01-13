@@ -1,1 +1,4 @@
-* TODO include ActiveSupport for Hash#symbolize_keys! and Inflector#pluralize
+* TODO handle anniversaries
+* TODO handle nicknames
+* TODO include ActiveSupport for Hash#symbolize_keys! and distance_of_time_in_words
+
