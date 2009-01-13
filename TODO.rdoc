@@ -1,0 +1,1 @@
+* TODO include ActiveSupport for Hash#symbolize_keys! and Inflector#pluralize

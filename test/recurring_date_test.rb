@@ -16,4 +16,8 @@ class RecurringDateTest < Test::Unit::TestCase
       assert_equal 31, @recurring_date.next_occurrence(Date.parse('2009-03-29')).years_since
     end
   end
+
+  should 'return nil when parsing nil' do
+    assert_nil Events::RecurringDate.parse(nil)
+  end
 end

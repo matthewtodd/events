@@ -1,7 +1,7 @@
 module Events
   class RecurringDate
     def self.parse(original)
-      new(Date.parse(original))
+      original ? new(Date.parse(original)) : nil
     end
 
     def initialize(original)

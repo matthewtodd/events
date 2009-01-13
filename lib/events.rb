@@ -7,7 +7,7 @@ require 'events/cli'
 
 module Events
   def self.address_book
-    @@address_book ||= AddressBook::Fake.new({})
+    @@address_book ||= AddressBook::Real.new
   end
 
   def self.address_book=(address_book)
