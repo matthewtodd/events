@@ -1,3 +1,4 @@
+# FIXME multiple libruby.dylib found: '/opt/local/lib/libruby.dylib' and '/usr/lib/libruby.1.dylib'
 require 'osx/cocoa'
 OSX.require_framework 'AddressBook'
 
