@@ -1,2 +1,2 @@
-* TODO handle nicknames
-
+* TODO sort events, closest first
+* TODO uniq events

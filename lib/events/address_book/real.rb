@@ -5,7 +5,6 @@ module Events
   module AddressBook
     class Real < Base
       def initialize
-        puts OSX::KABAnniversaryLabel
         @people = OSX::ABAddressBook.sharedAddressBook.people.to_ruby.map do |card|
           Events::Person.new(attributes(card))
         end
