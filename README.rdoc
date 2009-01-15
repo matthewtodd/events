@@ -1,0 +1,15 @@
+Lists upcoming birthdays and anniversaries from your OSX Address Book. (The "Birthdays" calendar in iCal just shows birthdays.)
+
+== Usage
+
+  $ events
+  Dino turns 52 TODAY. (Thursday, January 15)
+  Fred & Wilma Flintstone's 53rd anniversary is in 5 days. (Tuesday, January 20)
+
+== Install
+
+  gem install matthewtodd-events --source http://gems.github.com
+
+== Tips
+
+* I like to keep this running in a GeekTool window. If you like, you can bottom-justify this text by piping it through http://gist.github.com/43363.
