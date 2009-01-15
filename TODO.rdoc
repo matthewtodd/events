@@ -1,2 +1,0 @@
-* TODO sort events, closest first
-* TODO uniq events

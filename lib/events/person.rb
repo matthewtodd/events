@@ -9,20 +9,20 @@ module Events
       @other_dates   = recurring_date(attributes['other_dates'])
     end
 
-    def upcoming(date)
+    def upcoming(date, within_days=7)
       upcoming = []
 
       if @birthday
         next_birthday = @birthday.next_occurrence(date)
-        if next_birthday.days_until < 7
-          upcoming << format(":name_or_nickname turns :age :in_days. (:date)", next_birthday)
+        if next_birthday.days_until < within_days
+          upcoming << [next_birthday, format(":name_or_nickname turns :age :in_days. (:date)", next_birthday)]
         end
       end
 
       if @other_dates['anniversary']
         next_anniversary = @other_dates['anniversary'].next_occurrence(date)
-        if next_anniversary.days_until < 7
-          upcoming << format(":name_with_spouse's :ordinal_age anniversary is :in_days. (:date)", next_anniversary)
+        if next_anniversary.days_until < within_days
+          upcoming << [next_anniversary, format(":name_with_spouse's :ordinal_age anniversary is :in_days. (:date)", next_anniversary)]
         end
       end
 

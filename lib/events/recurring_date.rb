@@ -15,6 +15,10 @@ module Events
     private
 
     class Occurrence
+      include Comparable
+
+      attr_reader :date
+
       def initialize(original, from)
         @date     = Date.new(from.year, original.month, original.day)
         @date     = Date.new(from.year + 1, original.month, original.day) if @date < from
@@ -32,6 +36,10 @@ module Events
 
       def years_since
         @date.year - @original.year
+      end
+
+      def <=>(other)
+        self.date <=> other.date
       end
     end
   end

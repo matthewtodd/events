@@ -20,4 +20,8 @@ class RecurringDateTest < Test::Unit::TestCase
   should 'return nil when parsing nil' do
     assert_nil Events::RecurringDate.parse(nil)
   end
+
+  should 'allow comparisons of Occurrences' do
+    assert_equal Events::RecurringDate.parse('2009-01-10').next_occurrence(Date.today), Events::RecurringDate.parse('2009-01-10').next_occurrence(Date.today)
+  end
 end
