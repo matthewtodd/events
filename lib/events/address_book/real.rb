@@ -17,6 +17,7 @@ module Events
         attributes = {}
         attributes['first_name']    = rubify(card.valueForProperty(OSX::KABFirstNameProperty))
         attributes['last_name']     = rubify(card.valueForProperty(OSX::KABLastNameProperty))
+        attributes['nickname']      = rubify(card.valueForProperty(OSX::KABNicknameProperty))
         attributes['birthday']      = rubify(card.valueForProperty(OSX::KABBirthdayProperty))
         attributes['related_names'] = hashify(card.valueForProperty(OSX::KABRelatedNamesProperty))
         attributes['other_dates']   = hashify(card.valueForProperty(OSX::KABOtherDatesProperty))
