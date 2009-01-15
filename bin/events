@@ -2,5 +2,6 @@
 
 $:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 require 'events'
+require 'events/addressbook/real' # FIXME multiple libruby.dylib found: '/opt/local/lib/libruby.dylib' and '/usr/lib/libruby.1.dylib'
 
 Events::CLI.new(STDOUT, ARGV).run

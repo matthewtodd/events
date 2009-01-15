@@ -9,4 +9,3 @@ module Events
 end
 
 require 'events/address_book/fake'
-require 'events/address_book/real'
