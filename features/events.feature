@@ -15,9 +15,8 @@ Feature: Display Upcoming Birthdays
 
   Scenario: One anniversary in the coming week
     Given these people in my address book
-      | first_name | last_name | related_names_value | related_names_label | other_dates |
-      | Matthew    | Todd      | Valerie Todd        | Spouse              | 2006-11-04  |
-      | Valerie    | Todd      | Matthew Todd        | Spouse              | 2006-11-04  |
+      | first_name | last_name | related_names                  | other_dates                       |
+      | Matthew    | Todd      | { 'spouse' => 'Valerie Todd' } | { 'anniversary' => '2006-11-04' } |
     When I ask for upcoming events on 2009-11-01
     Then I should see these results
       """
