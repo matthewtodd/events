@@ -1,4 +1,8 @@
-Lists upcoming birthdays and anniversaries from your OSX Address Book. (The "Birthdays" calendar in iCal just shows birthdays.)
+Lists upcoming birthdays and anniversaries from your OSX Address Book.
+
+I like this better than iCal's "Birthdays" calendar because it goes anywhere I can send STDOUT, and because it figures out how old people are, or what anniversary they've got coming up. (Ah, and iCal doesn't do anniversaries.)
+
+So, there you have it.
 
 == Usage
 
