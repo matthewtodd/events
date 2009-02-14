@@ -16,4 +16,4 @@ So, there you have it.
 
 == Tips
 
-* I like to keep this running in a GeekTool window. If you like, you can bottom-justify this text by piping it through http://gist.github.com/43363.
+* I used to keep this running in a GeekTool window. (If you like, you can bottom-justify this text by piping it through http://gist.github.com/43363.) I've since written a similar tool called HeadsUp that you may appreciate: http://matthewtodd.github.com/heads_up.
